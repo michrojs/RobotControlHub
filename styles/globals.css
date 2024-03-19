@@ -6,6 +6,7 @@
 
 /* Шрифты и типографика */
 body {
+    font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 55%, rgba(247, 103, 103, 0.2) 100%), linear-gradient(270deg, #FDE6E6 0%, #FFFFFF 31%, #FFFFFF 67%, #FDE6E6 100%);
 }
