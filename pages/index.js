@@ -13,8 +13,6 @@ export default function Home() {
     const [newRobotName, setNewRobotName] = useState("");
     const [robots, setRobots] = useState([]);
 
-    console.log(process.env.POSTGRES_URL);
-
     useEffect(() => {
         getAllRobots().then(data => {
             setRobots(data);
@@ -27,7 +25,6 @@ export default function Home() {
         setNewRobotName(event.target.value);
     };
 
-    // Обработчик отправки формы
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
@@ -52,6 +49,8 @@ export default function Home() {
             });
             const freshRobots = await getAllRobots();
             setRobots(freshRobots);
+            const status = robots.find(robot => robot.id === id).status;
+            enqueueSnackbar(status ? 'Робот отключен.' : 'Робот запущен.', {variant: status ? 'error' : 'success'})
         } catch (error) {
             enqueueSnackbar('Ошибка при переключении статуса.', {variant: 'error'})
         }
@@ -71,7 +70,7 @@ export default function Home() {
         const href = window.location.href;
         const url = "checkStatus:\t" + href + "api/robot?statusId=" + id + "\nchangeStatus:\t" + href + "api/robot?updateId=" + id;
         navigator.clipboard.writeText(url).then(() => {
-            enqueueSnackbar("Ссылка на API скопирована в буфер обмена", {variant: 'success'})
+            enqueueSnackbar("Ссылка API скопирована в буфер обмена", {variant: 'success'})
         }).catch(err => {
             enqueueSnackbar('Ошибка при копировании в буфер обмена.', {variant: 'error'})
         });
@@ -79,7 +78,7 @@ export default function Home() {
 
     return (
         <div>
-            <SnackbarProvider preventDuplicate anchorOrigin={{vertical: 'bottom', horizontal: 'center'}}/>
+            <SnackbarProvider anchorOrigin={{vertical: 'bottom', horizontal: 'center'}} style={{left: "500px"}}/>
             <Box
                 display="flex"
                 justifyContent="center"
