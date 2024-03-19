@@ -79,7 +79,7 @@ export default function Home() {
 
     return (
         <div>
-            <SnackbarProvider preventDuplicate anchorOrigin={{vertical: 'top', horizontal: 'center'}}/>
+            <SnackbarProvider preventDuplicate anchorOrigin={{vertical: 'bottom', horizontal: 'center'}}/>
             <Box
                 display="flex"
                 justifyContent="center"
