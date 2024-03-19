@@ -1,0 +1,9 @@
+{
+  "robots": [
+    {
+      "id": 1,
+      "name": "Парсер Excel",
+      "status": true
+    }
+  ]
+}
