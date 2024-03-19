@@ -6,7 +6,7 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import FileCopyIcon from '@mui/icons-material/FileCopy';
 import Image from "next/image";
 import logo from "/public/logo.svg";
-import {addRobot, getAllRobots, removeRobot, toggleRobotStatus} from "@/pages/components/Robot";
+import {addRobot, getAllRobots, removeRobot, toggleRobotStatus} from "@/components/Robot";
 import {enqueueSnackbar, SnackbarProvider} from "notistack";
 
 export default function Home() {
