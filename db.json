@@ -1,3 +1,14 @@
 {
-  "robots": []
+  "robots": [
+    {
+      "id": 1,
+      "name": "авыфаыв",
+      "status": true
+    },
+    {
+      "id": 4,
+      "name": "выаыва",
+      "status": true
+    }
+  ]
 }

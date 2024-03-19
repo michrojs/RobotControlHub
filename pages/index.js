@@ -13,6 +13,8 @@ export default function Home() {
     const [newRobotName, setNewRobotName] = useState("");
     const [robots, setRobots] = useState([]);
 
+    console.log(process.env.POSTGRES_URL);
+
     useEffect(() => {
         getAllRobots().then(data => {
             setRobots(data);
