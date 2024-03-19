@@ -1,40 +1,28 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# RobotControlHub
 
-## Getting Started
+Этот проект — центр управления роботом, который позволяет пользователям взаимодействовать с роботизированными системами через веб-интерфейс.
 
-First, run the development server:
+## Начало работы
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Чтобы начать работу с этим проектом, выполните следующие шаги:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Шаг 1: Форк репозитория
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+1. Перейдите на страницу проекта: [RobotControlHub](https://github.com/michrojs/RobotControlHub).
+2. Нажмите кнопку 'Fork' в правом верхнем углу страницы, чтобы создать копию репозитория в вашем аккаунте GitHub.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+### Шаг 2: Создание проекта в Vercel и настройка базы данных
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+1. Зарегистрируйтесь или войдите в свой аккаунт на [Vercel](https://vercel.com/%29).
+2. Создайте новый проект, выбрав репозиторий.
+3. В разделе 'Storage' выберите 'Postgres' и следуйте инструкциям для создания базы данных[^1^][1].
+4. В настройках хранилища PostgreSQL на Vercel предоставьте доступ к базе данных для вашего проекта.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Использование
 
-## Learn More
+После настройки проекта вы можете управлять роботизированными системами через веб-интерфейс, доступный по ссылке проекта на Vercel.
 
-To learn more about Next.js, take a look at the following resources:
+## Авторские права
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Этот проект защищен авторскими правами. Запрещено удалять или изменять логотип и информацию об авторе на веб-сайте проекта.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

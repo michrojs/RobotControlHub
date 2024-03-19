@@ -149,7 +149,7 @@ export default function Home() {
                                     justifyContent: "end",
                                     marginBottom: "10px"
                                 }}>Created
-                        by Mikhail Kaletin,<br/>January 2024.</Typography>
+                        by Mikhail Kaletin,<br/>March 2024.</Typography>
                 </Box>
             </Box>
         </div>
